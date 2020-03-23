@@ -4,6 +4,9 @@ from django.urls import reverse
 
 from . import models
 
+admin.site.site_header = 'Medical Database'
+admin.site.site_title = 'Medical Database'
+
 
 @admin.register(models.Drug)
 class DrugAdmin(admin.ModelAdmin):
