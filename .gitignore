@@ -1,2 +1,5 @@
 /.idea/
+
+/static/
+
 /db.sqlite3
