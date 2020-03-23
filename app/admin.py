@@ -25,7 +25,7 @@ class DrugAdmin(admin.ModelAdmin):
     def _advice_to_html(self, advice):
         out = '<li style="margin-bottom: 5px">'
         out += '<div>'
-        out += self._get_advice_link(advice)
+        out += f'<h3 style="padding: 0">{self._get_advice_link(advice)}</h3>'
         out += f'<div>{advice.scientic_recommendation}</div>'
 
         if advice.sources.count():
